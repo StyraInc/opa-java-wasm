@@ -4,7 +4,7 @@
   <parent>
     <groupId>com.styra.opa</groupId>
     <artifactId>opa-java-wasm-parent</artifactId>
-    <version>999-SNAPSHOT</version>
+    <version>0.0.3</version>
   </parent>
   <artifactId>opa-java-wasm</artifactId>
   <name>Java Opa Wasm</name>
