@@ -1,6 +1,7 @@
 package com.styra.opa.wasm;
 
 import com.dylibso.chicory.experimental.hostmodule.annotations.WasmModuleInterface;
+import com.dylibso.chicory.runtime.ByteArrayMemory;
 import com.dylibso.chicory.runtime.Instance;
 import com.dylibso.chicory.runtime.Memory;
 import com.dylibso.chicory.wasm.Parser;
@@ -37,7 +38,10 @@ public class OpaWasm implements OpaWasm_ModuleExports, OpaWasm_ModuleImports, Op
         this.yamlMapper = yamlMapper;
         this.memory = memory;
         this.instance =
-                Instance.builder(Parser.parse(is)).withImportValues(toImportValues()).build();
+                Instance.builder(Parser.parse(is))
+                        .withImportValues(toImportValues())
+                        .withMemoryFactory(ByteArrayMemory::new)
+                        .build();
         this.builtins = initializeBuiltins(defaultBuiltins, builtins);
     }
 
