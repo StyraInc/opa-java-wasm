@@ -61,7 +61,7 @@
     <chicory.version>1.0.0</chicory.version>
     <junit.version>5.11.4</junit.version>
     <jackson.version>2.18.2</jackson.version>
-    <spotless.version>2.44.2</spotless.version>
+    <spotless.version>2.44.3</spotless.version>
   </properties>
   <dependencyManagement>
     <dependencies>
