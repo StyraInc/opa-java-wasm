@@ -58,7 +58,7 @@
     <maven-gpg-plugin.version>3.2.7</maven-gpg-plugin.version>
     <nexus-staging-maven-plugin.version>1.7.0</nexus-staging-maven-plugin.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <chicory.version>1.0.0</chicory.version>
+    <chicory.version>1.1.0</chicory.version>
     <junit.version>5.11.4</junit.version>
     <jackson.version>2.18.2</jackson.version>
     <spotless.version>2.44.2</spotless.version>
