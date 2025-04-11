@@ -28,7 +28,7 @@ jobs:
         with:
           java-version: 11
           distribution: 'temurin'
-          server-id: ossrh
+          server-id: central
           server-username: MAVEN_USERNAME
           server-password: MAVEN_CENTRAL_TOKEN
           gpg-private-key: ${{ secrets.java_gpg_secret_key }}
@@ -63,8 +63,8 @@ jobs:
         run: |
           mvn --batch-mode clean deploy -Prelease -DskipTests=true -X
         env:
-          MAVEN_USERNAME: ${{ secrets.ossrh_username }}
-          MAVEN_CENTRAL_TOKEN: ${{ secrets.ossrh_password }}
+          MAVEN_USERNAME: ${{ secrets.sonatype_username }}
+          MAVEN_CENTRAL_TOKEN: ${{ secrets.sonatype_password }}
           MAVEN_GPG_PASSPHRASE: ${{ secrets.java_gpg_passphrase }}
 
       - name: Back to Snapshot
