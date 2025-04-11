@@ -60,7 +60,7 @@
     <nexus-staging-maven-plugin.version>1.7.0</nexus-staging-maven-plugin.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <chicory.version>1.2.1</chicory.version>
-    <junit.version>5.12.1</junit.version>
+    <junit.version>5.12.2</junit.version>
     <jackson.version>2.18.3</jackson.version>
     <spotless.version>2.44.4</spotless.version>
   </properties>
